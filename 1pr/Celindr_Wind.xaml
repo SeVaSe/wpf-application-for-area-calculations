@@ -1,0 +1,50 @@
+﻿<Window x:Class="_1pr.Celindr_Wind"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_1pr"
+        mc:Ignorable="d"
+        Title="Цилиндр" Height="450" Width="800" Background="CadetBlue">
+    <Grid>
+        <Button x:Name="Back1"  FontWeight="Bold" Content="Назад" HorizontalAlignment="Left" Height="48" Margin="703,360,0,0" VerticalAlignment="Top" Width="71" Click="back1_Click"/>
+        <Button x:Name="vichisl_3" FontWeight="Bold" Content="Вычислить" HorizontalAlignment="Left" Height="33" Margin="564,109,0,0" VerticalAlignment="Top" Width="128" Click="vichisl_3_Click"/>
+
+        <TextBox x:Name="TxtBox_R" HorizontalAlignment="Left" Height="24" Margin="564,27,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="114"/>
+        <TextBox x:Name="TxtBox_H" HorizontalAlignment="Left" Height="24" Margin="564,56,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="114"/>
+
+        <TextBlock x:Name="TxtBl_S_osn" HorizontalAlignment="Left" Height="22" Margin="621,176,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="169"/>
+        <TextBlock x:Name="TxtBl_S_bok" HorizontalAlignment="Left" Height="22" Margin="621,211,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="169"/>
+        <TextBlock x:Name="TxtBl_S_obch" HorizontalAlignment="Left" Height="22" Margin="628,243,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="162"/>
+        <TextBlock x:Name="TxtBL_V" HorizontalAlignment="Left" Height="22" Margin="628,281,0,0" TextWrapping="Wrap" Text=" " VerticalAlignment="Top" Width="162"/>
+        <Grid>
+            <Button x:Name="vichisl_2" Content="Вычислить" HorizontalAlignment="Left" Height="33" Margin="564,109,0,0" VerticalAlignment="Top" Width="128" Click="vichisl_3_Click">
+                <Button.Effect>
+                    <DropShadowEffect/>
+                </Button.Effect>
+            </Button>
+            <Button x:Name="Back2" Content="Назад" HorizontalAlignment="Left" Height="48" Margin="703,360,0,0" VerticalAlignment="Top" Width="71" Click="back1_Click">
+                <Button.Effect>
+                    <DropShadowEffect/>
+                </Button.Effect>
+            </Button>
+
+            <TextBox x:Name="TxtBox_R1" HorizontalAlignment="Left" Height="24" Margin="564,27,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="114" />
+            <TextBox x:Name="TxtBox_H1" HorizontalAlignment="Left" Height="24" Margin="564,56,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="114"/>
+
+            <Label Content="R=" HorizontalAlignment="Left" Height="29" Margin="535,25,0,0" VerticalAlignment="Top" Width="29"/>
+            <Label Content="H=" HorizontalAlignment="Left" Height="29" Margin="535,56,0,0" VerticalAlignment="Top" Width="29"/>
+            <Label Content="S осн.=" HorizontalAlignment="Left" Height="29" Margin="569,172,0,0" VerticalAlignment="Top" Width="52"/>
+            <Label Content="S бок.=" HorizontalAlignment="Left" Height="29" Margin="569,206,0,0" VerticalAlignment="Top" Width="52"/>
+            <Label Content="S общ.= " HorizontalAlignment="Left" Height="29" Margin="569,236,0,0" VerticalAlignment="Top" Width="59"/>
+            <Label Content="V=" HorizontalAlignment="Left" Height="29" Margin="599,277,0,0" VerticalAlignment="Top" Width="29"/>
+            <Expander HorizontalAlignment="Left" Height="288" Header="Формулы для данной фигуры" Margin="10,11,0,0" VerticalAlignment="Top" Width="479">
+                <Image Source="/Image1.png" Stretch="Fill" Height="250" Width="479"/>
+            </Expander>
+
+
+        </Grid>
+
+
+    </Grid>
+</Window>

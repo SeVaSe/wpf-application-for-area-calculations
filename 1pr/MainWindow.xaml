@@ -1,0 +1,43 @@
+﻿<Window x:Class="_1pr.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_1pr"
+        mc:Ignorable="d"
+        Title="Меню" Height="450" Width="800" Background="CadetBlue">
+
+    <Grid>
+        <Button Content="Выход" FontWeight="Bold" HorizontalAlignment="Left" Height="41" Margin="660,366,0,0" VerticalAlignment="Top" Width="112" Click="Button_Click">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Border BorderBrush="White" BorderThickness="1" HorizontalAlignment="Center" Height="39" Margin="0,151,0,0" VerticalAlignment="Top" Width="329" CornerRadius="10" Background="White">
+            <TextBlock HorizontalAlignment="Left" Height="32" TextWrapping="Wrap" VerticalAlignment="Center" Width="239" FontFamily="Snap ITC" FontWeight="Bold" FontSize="20" Margin="46,0,0,0"><Run Language="ru-ru" Text="Калькулятор площадей"/></TextBlock>
+        </Border>
+        <ComboBox HorizontalAlignment="Center" Height="16" Width="84" RenderTransformOrigin="0.5,0.5" Margin="0,190,0,0" Text="Меню элементов" VerticalAlignment="Top" Foreground="#FFE8B4B4">
+            <ComboBox.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FFFDEEEE" Offset="1"/>
+                </LinearGradientBrush>
+            </ComboBox.Background>
+            <ComboBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </ComboBox.RenderTransform>
+            <Button x:Name="sphera" FontWeight="Bold" Content="Сфера" HorizontalAlignment="Left" Height="42" VerticalAlignment="Top" Width="128" Click="sphera_click"/>
+            <Button x:Name="konus" FontWeight="Bold" Content="Конус" HorizontalAlignment="Left" Height="42" VerticalAlignment="Top" Width="128" Click="konus_Click"/>
+            <Button x:Name="celindr" FontWeight="Bold" Content="Цилиндр" HorizontalAlignment="Left" Height="42" VerticalAlignment="Top" Width="128" Click="celindr_Click"/>
+            <Button x:Name="usuch_konus" FontWeight="Bold" Content="Усеченный конус" HorizontalAlignment="Left" Height="42" VerticalAlignment="Top" Width="128" Click="usuch_konus_Click"/>
+            
+        </ComboBox>
+
+
+    </Grid>
+</Window>
